@@ -1,0 +1,1 @@
+# bhshop_django
