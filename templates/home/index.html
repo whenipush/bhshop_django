@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+		<div class="container text-center my-5">
+			<div class="row">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<img src="{% static 'img/bodvar.png'%}" alt="" class="rounded-img">
+					<h1 class="fw-light">Твой магазин в Brawlhalla</h1>
+					<p class="lead text-dark">
+						&#128293Дешевые цены <br>
+						&#128293Оплата Qiwi <br>
+						&#128293Быстрая доставка
+					</p>
+					<a href="{% url 'catalog' %}" target="" class="btn btn-dark ">
+						Каталог
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+{% endblock %}

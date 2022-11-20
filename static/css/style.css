@@ -1,0 +1,38 @@
+
+.card {
+	border-radius: 1em;
+	text-align: center;
+	padding: 1em;
+
+}
+.card:hover {
+	background-color: rgba(0, 0, 0, 0.02) ;
+}
+
+.card img {
+	border-radius: 1em;
+	width: 90%;
+	margin: auto;
+}
+
+
+.rounded-img {
+		width: 60%;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+		padding: 0.6em;
+		margin-bottom: 1em;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}

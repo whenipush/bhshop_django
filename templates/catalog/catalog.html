@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+		<div class="container my-5">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+				{% for item in product %}
+				{% if item.availability == True %}
+				<div class="col">
+					<div class="card">
+						<img src="{{ item.photo.url }}" class="card-img-top" alt="MyImage">
+						<div class="card-body">
+							<h4 class="card-title">{{ item.title }}</h4>
+							<h5>Цена: {{ item.price }}р</h5>
+							<a href="perehod_na_oplatu" class="btn btn-dark">Купить</a>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+				{% endfor %}
+
+			</div>
+		</div>
+{% endblock %}
